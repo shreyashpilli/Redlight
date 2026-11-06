@@ -14,9 +14,9 @@ Requirements:
 From the repository root, run:
 
 ```powershell
-cmake -S Redlight -B Redlight/build -G "Visual Studio 17 2022" -A x64
-cmake --build Redlight/build --config Release
-cmake --install Redlight/build --config Release --prefix dist/Redlight
+cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+cmake --build build --config Release
+cmake --install build --config Release --prefix dist/Redlight
 ```
 
 Keep `Redlight.exe` and `RedlightRecovery.exe` in the same folder. Launch `dist/Redlight/Redlight.exe`.
